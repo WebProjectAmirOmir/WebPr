@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family:'Open Sans';
+
+}
+#container {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8AA9DB;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-family: Source Sans Pro;
+  font-weight: lighter; 
+  font-size: 22px;
+  margin: 15px;
+  display: inline-block; 
+}
+#logo {
+  margin-left: 15px;
+}
+header {
+  background-color: lightskyblue;
+  height: 200px;
+  background-image: url("newsHeader.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section{
+  margin: 50px 75px;
+  display: flex;
+  flex-flow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+footer {
+  background-color: black;
+  height: 75px;
+}
+#links li{
+  display: inline-block;
+}
+.linksA::after {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: white;
+  transition: width .3s;
+}
+.linksA:hover::after{
+  width: 100%;
+  transition: width 0.3s;
+}
+#auth li a {
+  color: white;
+  padding: 0.3em 0.7em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 6px;
+}
+#auth{
+  display: inline-block;
+}
+#auth a:hover {
+  background-color: #ce0606;
+  cursor: pointer;
+}
+
+/* section part 1*/
+.typesOfNews{
+  display: flex;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  margin: 3px;
+}
+.type{
+  width: 250px;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #eac80d;
+  height: 62px;
+  border-bottom: 3px solid #bfa30c;
+
+}
+.type p{
+  font-family:'Open Sans';
+  font-weight: 800;
+  font-size: 29px;
+  text-transform: uppercase;
+  color: white; 
+}
+.type{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+.card img{
+  width: 250px;
+  height: 200px;
+}
+#container{
+  display: flex;
+}
+
+.type1{
+  background-color: #1abc9c;
+  border-bottom: 3px solid #18937b;
+}
+.type2{
+  background-color: #5d6a9a;
+  border-bottom: 3px solid #474f6f;
+}
+
+
+/* section part 2*/
+.deepCard{
+  width: 250px;
+  background-color: rgba(0,159,209,0.08);
+}
+.cardA{
+  display: flex;
+  flex-direction: column;
+}
+.deepImg img{
+  width: 250px;
+  height: 170px;
+}
+.desc{
+  display: flex;
+}
+
+.deepCard a{
+    text-decoration: none;
+}
+.deepCard .title{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.33;
+    color: #212121;
+}
+.deepCard .desc{
+    font-size: 13px;
+    line-height: 1.38;
+    color: #757575;
+}
+
